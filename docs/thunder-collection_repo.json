@@ -1,0 +1,348 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "repo",
+    "dateExported": "2023-04-26T05:47:44.176Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "1334a1b9-6f1a-4915-8ece-8e545d8d4c63",
+            "name": "Sanciones",
+            "containerId": "",
+            "created": "2023-04-26T05:17:59.894Z",
+            "sortNum": 10000,
+            "settings": {
+                "headers": [],
+                "auth": {
+                    "type": "bearer",
+                    "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiT3JsYW5kbyBCZXRhbmNvdXJ0aCIsImVtYWlsIjoib2JldGFuY291cnRodW5pY2FoQGdtYWlsLmNvbSIsImF2YXRhciI6IiIsIl9pZCI6IjYzNTlkNzcwZmVjYjg5ZDJjNmQxZDNmNSIsImlhdCI6MTY2NzM0ODU4OH0.DubkaMP35_ukO5IOA3MECp313Mj9aTUSCdQl8IKFdv0"
+                },
+                "tests": []
+            }
+        },
+        {
+            "_id": "be4ae19b-ec27-4e61-a286-9f77cc45176f",
+            "name": "Users",
+            "containerId": "",
+            "created": "2023-04-26T05:17:59.896Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8e456e81-93cb-41d7-873c-3e6951298bf9",
+            "colId": "92c12fda-9d72-4bce-a9e8-6d531925d64a",
+            "containerId": "1334a1b9-6f1a-4915-8ece-8e545d8d4c63",
+            "name": "get All",
+            "url": "{{HOST}}/cashflow/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-04-26T05:17:59.895Z",
+            "modified": "2023-04-26T05:17:59.895Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a0b53697-dd09-45b1-912a-3e8b50a8aff9",
+            "colId": "92c12fda-9d72-4bce-a9e8-6d531925d64a",
+            "containerId": "1334a1b9-6f1a-4915-8ece-8e545d8d4c63",
+            "name": "get Count",
+            "url": "{{HOST}}/cashflow/count",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2023-04-26T05:17:59.896Z",
+            "modified": "2023-04-26T05:17:59.896Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2b28d332-76e8-4398-bfbc-7d4eff974181",
+            "colId": "92c12fda-9d72-4bce-a9e8-6d531925d64a",
+            "containerId": "1334a1b9-6f1a-4915-8ece-8e545d8d4c63",
+            "name": "find By  Id",
+            "url": "{{HOST}}/cashflow/byindex/{id}",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-04-26T05:17:59.897Z",
+            "modified": "2023-04-26T05:17:59.897Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "63465ec4740f94fb939fb67b",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "0a37021a-9dfe-4fdc-a94a-d20b31fadf3d",
+            "colId": "92c12fda-9d72-4bce-a9e8-6d531925d64a",
+            "containerId": "1334a1b9-6f1a-4915-8ece-8e545d8d4c63",
+            "name": "New",
+            "url": "{{HOST}}/sanciones/new",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-04-26T05:17:59.899Z",
+            "modified": "2023-04-26T05:35:17.216Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "type",
+                        "value": "INCOME"
+                    },
+                    {
+                        "name": "date",
+                        "value": "2022-11-01T23:56:27.320Z"
+                    },
+                    {
+                        "name": "nombre",
+                        "value": "Bessy"
+                    },
+                    {
+                        "name": "tcomentario",
+                        "value": "Reposicion"
+                    },
+                    {
+                        "name": "tsancion",
+                        "value": "quedarse en clase"
+                    },
+                    {
+                        "name": "edad",
+                        "value": "24"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmVzc3kiLCJlbWFpbCI6ImJlc3N5QGdtYWlsLmNvbSIsImF2YXRhciI6IiIsIl9pZCI6IjY0NDhiNTRhYzc3MmQ5YTIzMzY4NTRmYiIsImlhdCI6MTY4MjQ4NzEwM30.HNtgSoqh0L8ufXloBTCzkKL-YNas-QBYgVwQFsjpD68"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bc6b4c71-3f98-40bd-a8ba-7a4a4a7d0a21",
+            "colId": "92c12fda-9d72-4bce-a9e8-6d531925d64a",
+            "containerId": "1334a1b9-6f1a-4915-8ece-8e545d8d4c63",
+            "name": "Delete",
+            "url": "{{HOST}}/sanciones/delete/{id}",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-04-26T05:17:59.900Z",
+            "modified": "2023-04-26T05:46:30.978Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "6448b814ceb4e50c7d955a23",
+                    "isPath": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmVzc3kiLCJlbWFpbCI6ImJlc3N5QGdtYWlsLmNvbSIsImF2YXRhciI6IiIsIl9pZCI6IjY0NDhiNTRhYzc3MmQ5YTIzMzY4NTRmYiIsImlhdCI6MTY4MjQ4NzEwM30.HNtgSoqh0L8ufXloBTCzkKL-YNas-QBYgVwQFsjpD68"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bd65c4b8-a372-415b-a305-1d14186705ed",
+            "colId": "92c12fda-9d72-4bce-a9e8-6d531925d64a",
+            "containerId": "1334a1b9-6f1a-4915-8ece-8e545d8d4c63",
+            "name": "Update",
+            "url": "{{HOST}}/sanciones/update/{id}",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-04-26T05:17:59.901Z",
+            "modified": "2023-04-26T05:43:38.719Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "6448b814ceb4e50c7d955a23",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "date",
+                        "value": "2022-09-29T23:55:27.320Z"
+                    },
+                    {
+                        "name": "nombre",
+                        "value": "Carolina"
+                    },
+                    {
+                        "name": "tsancion",
+                        "value": "Otro Ingreso Actualizado"
+                    },
+                    {
+                        "name": "edad",
+                        "value": "24"
+                    },
+                    {
+                        "name": "tcomentario",
+                        "value": "aprenda"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmVzc3kiLCJlbWFpbCI6ImJlc3N5QGdtYWlsLmNvbSIsImF2YXRhciI6IiIsIl9pZCI6IjY0NDhiNTRhYzc3MmQ5YTIzMzY4NTRmYiIsImlhdCI6MTY4MjQ4NzEwM30.HNtgSoqh0L8ufXloBTCzkKL-YNas-QBYgVwQFsjpD68"
+            },
+            "tests": []
+        },
+        {
+            "_id": "fa2293ae-0e26-4ccd-b8e0-80d1b38bdd8e",
+            "colId": "92c12fda-9d72-4bce-a9e8-6d531925d64a",
+            "containerId": "1334a1b9-6f1a-4915-8ece-8e545d8d4c63",
+            "name": "ValidatorTest",
+            "url": "{{HOST}}/sanciones/testvalidator",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-04-26T05:17:59.902Z",
+            "modified": "2023-04-26T05:37:53.014Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "error@unicah.edu"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmVzc3kiLCJlbWFpbCI6ImJlc3N5QGdtYWlsLmNvbSIsImF2YXRhciI6IiIsIl9pZCI6IjY0NDhiNTRhYzc3MmQ5YTIzMzY4NTRmYiIsImlhdCI6MTY4MjQ4NzEwM30.HNtgSoqh0L8ufXloBTCzkKL-YNas-QBYgVwQFsjpD68"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c089112b-50df-44cb-b277-ad1035fc2aa7",
+            "colId": "92c12fda-9d72-4bce-a9e8-6d531925d64a",
+            "containerId": "be4ae19b-ec27-4e61-a286-9f77cc45176f",
+            "name": "Sign In",
+            "url": "{{HOST}}/security/signup",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-04-26T05:17:59.903Z",
+            "modified": "2023-04-26T05:23:22.947Z",
+            "headers": [
+                {
+                    "name": "apikey",
+                    "value": "cuandoLosGatosNoEstan"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "bessy"
+                    },
+                    {
+                        "name": "email",
+                        "value": "bessy@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7367b9b6-710e-4e64-a1be-229bb1960a05",
+            "colId": "92c12fda-9d72-4bce-a9e8-6d531925d64a",
+            "containerId": "be4ae19b-ec27-4e61-a286-9f77cc45176f",
+            "name": "Login",
+            "url": "{{HOST}}/security/login",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-04-26T05:17:59.904Z",
+            "modified": "2023-04-26T05:24:12.256Z",
+            "headers": [
+                {
+                    "name": "apikey",
+                    "value": "cuandoLosGatosNoEstan"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "bessy@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    },
+                    {
+                        "name": "2",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7dec1a31-6b70-4870-847a-e36a8b12469e",
+            "colId": "92c12fda-9d72-4bce-a9e8-6d531925d64a",
+            "containerId": "be4ae19b-ec27-4e61-a286-9f77cc45176f",
+            "name": "add Role",
+            "url": "{{HOST}}/security/addrole/{id}",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-04-26T05:17:59.905Z",
+            "modified": "2023-04-26T05:17:59.905Z",
+            "headers": [
+                {
+                    "name": "apikey",
+                    "value": "cuandoLosGatosNoEstan"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "6359d770fecb89d2c6d1d3f5",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "role",
+                        "value": "admin"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "apikey",
+                "value": "cuandoLosGatosNoEstan"
+            }
+        ],
+        "tests": []
+    }
+}
